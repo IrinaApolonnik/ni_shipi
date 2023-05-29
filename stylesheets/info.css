@@ -1,0 +1,89 @@
+.circlelogo {
+  transition: all 0.5s ease-out;
+  width: 34.063vw;
+  height: 34.063vw;
+  align-items: center;
+  position: absolute;
+  top: 5vw;
+  left:1.5vw;
+  background: #DEFFFF;
+  border: 0.15vw solid #FF7596;
+  border-radius: 400px;
+}
+.circlelogo:hover {
+  background: #FF7596;
+  transition: all 0.5s ease-out;
+}
+.logo {
+  position: absolute;
+  background-image: url(../images/logop.svg);
+  background-size: cover;
+  width: 13.566vw;
+  height: 19.934vw;
+  top: 7vw;
+  left: 10vw;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+}
+.circleback {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.circleback:hover ~ .logo, .logo:hover{
+  background-image: url(../images/logob.svg);
+  transition: all 0.5s ease-out;
+}
+.cat {
+  position: absolute;
+  width: 31.615vw;
+  height: 32.552vw;
+  z-index: 2;
+  left: 11vw;
+  top:14vw;
+}
+.kotik {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.tie {
+ position: absolute;
+ width: 5.208vw;
+ height: 3.490vw;
+ left: 21.5vw;
+ margin-top:10vw;
+}
+.tiec {
+ position: absolute;
+ width: 5.208vw;
+ height: 3.490vw;
+ left: 21.5vw;
+ margin-top:10vw;
+}
+.kotik, .tiec {
+  animation: levitation 4s ease-in-out -0.5s infinite alternate;
+}
+.tie {
+  animation: levitation 4s ease-in-out -0.25s infinite alternate;
+}
+@keyframes levitation {
+  0% {top:-20px;}
+  50% {top:20px;}
+  100% {top:-20px;}
+}
+.infotext p {
+font-style: normal;
+font-weight: 300;
+font-size: 2.5vw;
+line-height: 3.854vw;
+}
+.infotext span {
+  color: #FF7596;
+}
+.infotext {
+  position: absolute;
+  top:12vw;
+  right: 5vw;
+}

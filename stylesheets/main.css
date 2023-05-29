@@ -1,0 +1,81 @@
+
+/* фон */
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.poster p, .game p {
+  transition: all 0.5s ease-in;
+  font-size: 1.2vw;
+  line-height: 43px;
+  color: #F05A7E;
+  text-decoration: none;
+}
+/* не шипи в центре */
+.nishipi {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -4vh;
+  margin-left: -22vw;
+  font-style: italic;
+  font-size: 12vw;
+  line-height: 43px;
+  stroke: #DEFFFF;
+  stroke-width: 0.15vw;
+  fill:rgba(255, 117, 150, 1);
+
+  animation: textAnimate 5s infinite alternate;
+}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+  }
+}
+/* кнопочки-интерактивы */
+.interactive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -16vw;
+  left: -6vw;
+  width: 112vw;
+  height: 30vw;
+}
+.poster, .game {
+  transition: all 0.5s ease-out;
+  text-align: center;
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  background-color: #DEFFFF;
+  border-radius: 40vw;
+  border: solid #FF7596 0.15vw;
+  overflow: hidden;
+  text-decoration: none;
+}
+.poster:hover, .game:hover {
+  transition: all 0.5s ease-out;
+  transform: scale(0.9);
+  background-color: #E9FFE3;
+}
+.poster a, .game a {
+  width: 100%;
+  height: 100%;
+}
+.poster p, .game p {
+  margin-top: 7vw;
+}

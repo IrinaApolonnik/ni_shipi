@@ -1,0 +1,101 @@
+body {
+  width: 100%;
+  height: auto;
+}
+html {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+overflow-x: hidden;
+}
+#item_list {
+  position: absolute;
+  display: grid;
+  padding: 6vw;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.runningstroke {
+  font-family: WebGame;
+    position: fixed;
+    top:27%;
+    /* margin-top: -12.5vw; */
+    font-style: normal;
+    font-size: 37vw;
+    line-height: 374px;
+    color: #DEFFFF;
+    animation: text 15s linear -0.5s infinite;
+    transition: all .5s ease-out;
+  }
+  @keyframes text {
+    0% {transform: translateX(-1.389vw)}
+    100% {transform: translateX(-50%)}
+  }
+.card {
+  position: relative;
+  margin: 2vw;
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  border: 0.15vw solid #FF7596;
+  border-radius: 75px;
+  overflow: hidden;
+
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.balloon {
+  background-color: #FFFFFF;
+}
+.balloon img {
+  position: absolute;
+  width: 140%;
+  bottom: 0;
+  right: -6.5vw;
+}
+.cups {
+  background-color: #FFF3E8;
+}
+.cups img {
+  position: absolute;
+  height: 80%;
+  width: auto;
+  bottom: 10%;
+  right: -2.5vw;
+}
+.infshop {
+  position: relative;
+  /* background: rgba(240, 90, 126, 0.74); */
+  /* border-radius: 60px; */
+  width: 100%;
+  height: 100%;
+  margin-top: 110%;
+  margin-left: -30vw;
+  z-index: 2;
+  transition: all 0.7s ease-out;
+}
+.infshop img {
+  position: absolute;
+  height: 110%;
+  width: auto;
+  left: 0;
+  bottom: 0;
+}
+.card:hover .infshop {
+  margin-top: 0;
+  margin-left: 0;
+  transition: all 0.7s ease-out;
+}
+/* .hide {
+  overflow: hidden;
+}
+.fill {
+  overflow: hidden;
+  animation: fill 0.3s linear forwards;
+}
+@keyframes fill {
+  0% {width: 0%; height: 0%; opacity: 0;}
+  100% {width: 100%; height: 100%; opacity: 1;}
+} */

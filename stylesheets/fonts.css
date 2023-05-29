@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "nishipi";
+  src: url("../fonts/TildaSans.ttf");
+  src: local("TildaSans-Regular"),
+  url("../fonts/TildaSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nishipi";
+  src: url("../fonts/Baymax.otf");
+  src: local("Baymax"),
+  url("../fonts/Baymax.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+    font-family: 'nishipi';
+    src: url('TildaSans-Light.ttf');
+    src: local('Tilda Sans Light'), local('TildaSans-Light'),
+        url('TildaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('TildaSans-Light.woff2') format('woff2'),
+        url('TildaSans-Light.woff') format('woff'),
+        url('TildaSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: "webgame";
+  src: url("../fonts/YUNGA.otf");
+  src: local("YUNGA Display", "YUNGA"),
+  url("../fonts/YUNGA.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
