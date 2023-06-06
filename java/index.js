@@ -1,5 +1,11 @@
 $(document).ready(function(){
+  $(".addtocart").click(function(){
+     $(".icon").toggleClass("add");
+     $(".butcart").toggleClass("add");
+     $(".addtocart p").toggleText("Удалить из корзины");
 
+
+   });
   function random(low, high) {
     return Math.random() * (high - low) + low;
   }
@@ -198,12 +204,14 @@ $(document).ready(function(){
   });
 
 
-  $( ".circlelogo" ).hover(function(){
-    $(".logo").css("background-image","url(../images/logob.svg)");
-    $(this).css("background","(#FF7596");
-     }, function(){
-       $(".logo").css("background-image","url(../images/logop.svg)");
-       $(this).css("background","(#DEFFFF");
-   });
+
+
+  // $( ".circlelogo" ).hover(function(){
+  //   $(".logo").css("background-image","url(../images/logob.svg)");
+  //   $(this).css("background","(#FF7596");
+  //    }, function(){
+  //      $(".logo").css("background-image","url(../images/logop.svg)");
+  //      $(this).css("background","(#DEFFFF)";
+  //  });
 
 });

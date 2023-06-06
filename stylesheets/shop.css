@@ -9,10 +9,53 @@ html {
 overflow-x: hidden;
 }
 #item_list {
+  top: 50vw;
   position: absolute;
   display: grid;
   padding: 6vw;
   grid-template-columns: 1fr 1fr 1fr;
+
+}
+.change_items {
+  position: absolute;
+  background-position: center;
+  left: 50%;
+  transform: translateX(-50%);
+  /* mix-blend-mode: darken; */
+  width: 70%;
+  height: 40vw;
+  top: 4vw;
+  padding: 3vw 6vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: items 20s linear infinite;
+}
+@keyframes items {
+  0% {background-image: url(../images/balloons.png);opacity: 1}
+  4% {background-image: url(../images/balloons.png);opacity: 1}
+  8% {background-image: url(../images/balloons.png);opacity: 0}
+  12% {background-image: url(../images/cups.png);opacity: 1}
+  16% {background-image: url(../images/cups.png);opacity: 1}
+  20% {background-image: url(../images/cups.png);opacity: 0}
+  24% {background-image: url(../images/bag.png);opacity: 1}
+  28% {background-image: url(../images/bag.png);opacity: 1}
+  32% {background-image: url(../images/bag.png);opacity: 0}
+  36% {background-image: url(../images/bottlewithcup.png);opacity: 1}
+  40% {background-image: url(../images/bottlewithcup.png);opacity: 1}
+  44% {background-image: url(../images/bottlewithcup.png);opacity: 0}
+  48% {background-image: url(../images/stick.png);opacity: 1}
+  52% {background-image: url(../images/stick.png);opacity: 1}
+  56% {background-image: url(../images/stick.png);opacity: 0}
+  60% {background-image: url(../images/stickers.png);opacity: 1}
+  64% {background-image: url(../images/stickers.png);opacity: 1}
+  68% {background-image: url(../images/stickers.png);opacity: 0}
+  72% {background-image: url(../images/tape.png);opacity: 1}
+  76% {background-image: url(../images/tape.png);opacity: 1}
+  80% {background-image: url(../images/tape.png);opacity: 0}
+  84% {background-image: url(../images/apron.png);opacity: 1}
+  90% {background-image: url(../images/apron.png);opacity: 1}
+  96% {background-image: url(../images/apron.png);opacity: 0}
+  100% {background-image: url(../images/balloons.png);opacity: 1}
 
 }
 .runningstroke {
@@ -46,7 +89,7 @@ overflow-x: hidden;
   width: 100%;
   height: auto;
 }
-.balloon {
+.balloon, .stickers, .tapes {
   background-color: #FFFFFF;
 }
 .balloon img {
@@ -55,18 +98,53 @@ overflow-x: hidden;
   bottom: 0;
   right: -6.5vw;
 }
-.cups {
+.cups, .bottlewithcup {
   background-color: #FFF3E8;
 }
-.cups img {
+.tapes img, .sweatshirt img, .cups img, .bag img, .bottlewithcup img, .stickers img, .stick img, .apron img {
   position: absolute;
   height: 80%;
   width: auto;
   bottom: 10%;
   right: -2.5vw;
 }
-.infshop {
-  position: relative;
+.bag, .apron {
+  background-color: #E9FFE3;
+}
+.stick {
+  background-color: #DEFFFF;
+}
+.bag img {
+  right: 6.7vw;
+}
+.bottlewithcup img {
+  height: 70%;
+  bottom: 13%;
+  right: 0;
+}
+.stickers img {
+  bottom: 0;
+}
+.stick img {
+  right: 5vw;
+}
+.apron img {
+  right: -0.3vw;
+  bottom: 8%;
+}
+.sweatshirt img {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
+.tapes img {
+  height: 100%;
+  bottom: 0;
+  right: -9vw;
+}
+.wavefill, .infshop {
+  position: absolute;
   /* background: rgba(240, 90, 126, 0.74); */
   /* border-radius: 60px; */
   width: 100%;
@@ -76,18 +154,194 @@ overflow-x: hidden;
   z-index: 2;
   transition: all 0.7s ease-out;
 }
-.infshop img {
+.wavefill img {
   position: absolute;
   height: 110%;
   width: auto;
   left: 0;
   bottom: 0;
+  z-index: -1;
 }
-.card:hover .infshop {
+.card:hover .wavefill {
   margin-top: 0;
   margin-left: 0;
   transition: all 0.7s ease-out;
 }
+.infshop {
+  padding: 2.5vw;
+  margin-left: 0;
+}
+.card:hover .infshop {
+  margin-top: 0;
+  transition: all 0.7s ease-out;
+}
+.infshop p {
+  transition: all 0.5s ease-in;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  color: #DEFFFF;
+  font-weight: 300;
+  text-decoration: none;
+
+}
+.infshop p span {
+  font-size: 1.7vw;
+  line-height: 0.2vw;
+}
+.addtocart {
+  position: absolute;
+  display: flex;
+  bottom: 3vw;
+  width: 87%;
+  align-items: center;
+  cursor: url('../images/pawhover.svg'), auto;
+}
+.addtocart p {
+  font-size: 1.7vw;
+}
+button {
+  display: block;
+  margin-top: 60px;
+  margin: 60px auto;
+}
+
+.icon {
+  width: 2vw;
+  height: 2vw;
+  margin: 0 auto;
+  position: relative;
+}
+.butcart {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  background-color: #DEFFFF;
+  border-radius: 40vw;
+  border: solid #FF7596 0.15vw;
+  right: -1.5vw;
+  bottom: -1.5vw;
+}
+.pin {
+  display: block;
+  background-color: #FF7596;
+  height: 0.15vw;
+  border-radius: 1px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.pin:nth-child(1) {
+  display: none;
+  width: 26px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pin:nth-child(2), .pin:nth-child(3) {
+   width: 1.5vw;
+  top: 50%;
+  right: 2px;
+  transform-origin: right;
+}
+
+.pin:nth-child(2) {
+  transform: translateY(500%) translateX(-50%) rotate(90deg);
+}
+
+.pin:nth-child(3) {
+  transform: translateY(0%)  rotate(0deg);
+}
+
+
+.icon.add .pin:nth-child(1) {
+  opacity: 0;
+}
+
+.icon.add .pin:nth-child(2) {
+  width: 1vw;
+  transform-origin: center;
+  top: auto;
+  right: auto;
+  bottom: 10px;
+  background-color: #DEFFFF;
+  transform: rotate(45deg);
+}
+
+.icon.add .pin:nth-child(3) {
+  width: 1.7vw;
+  background-color: #DEFFFF;
+  transform-origin: center;
+  right: -4.5px;
+  transform: rotate(-45deg);
+}
+.icon.add div {
+  background-color: #FF7596;
+  border: solid #DEFFFF 0.15vw;
+}
+
+/* button {
+  display: block;
+  margin-top: 60px;
+  margin: 60px auto;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pin {
+  display: block;
+  background-color: #fff;
+  height: 0.15vw;
+  border-radius: 1px;
+  position: absolute;
+  transition: all 150ms;
+}
+
+.pin:nth-child(1) {
+  width: 26px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pin:nth-child(2), .pin:nth-child(3) {
+   width: 17px;
+  top: 50%;
+  right: 2px;
+  transform-origin: right;
+}
+
+.pin:nth-child(2) {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.pin:nth-child(3) {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+.icon.toggled .pin:nth-child(1) {
+  opacity: 0;
+}
+
+.icon.toggled .pin:nth-child(2) {
+  width: 15px;
+  transform-origin: center;
+  top: auto;
+  right: auto;
+  bottom: 9px;
+}
+
+.icon.toggled .pin:nth-child(3) {
+  width: 26px;
+  transform-origin: center;
+  right: -4.5px;
+} */
 /* .hide {
   overflow: hidden;
 }

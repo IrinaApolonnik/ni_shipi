@@ -12,13 +12,16 @@ html:active {
 a:hover {
   cursor: url('../images/pawhover.svg'), auto;
 }
+* {
+  box-sizing: border-box;
+}
 /* шапка(меню) */
 .shapka {
   position: fixed;
   top: 0;
   left: 0;
   height: 5vh;
-  width: 98%;
+  width: 100%;
   padding: 0.260vw 0.781vw;
   display: flex;
   justify-content: space-between;
@@ -29,22 +32,14 @@ a:hover {
   transition: all 0.5s ease-out;
   color: #DEFFFF;
 }
-.shapka a, .shapka p, .shapka_all a {
+.shapka a {
   transition: all 0.5s ease-in;
   font-size: 1.2vw;
   line-height: 43px;
   color: #F05A7E;
   text-decoration: none;
 }
-.shapka_all {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 5vh;
-  width: 98.5%;
-  padding: 0vw 0.781vw;
-  z-index: 3;
-}
+
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){

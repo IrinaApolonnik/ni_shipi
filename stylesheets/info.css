@@ -5,7 +5,7 @@
   align-items: center;
   position: absolute;
   top: 5vw;
-  left:1.5vw;
+  left: 8.5vw;
   background: #DEFFFF;
   border: 0.15vw solid #FF7596;
   border-radius: 400px;
@@ -40,7 +40,7 @@
   width: 31.615vw;
   height: 32.552vw;
   z-index: 2;
-  left: 11vw;
+  left: 18vw;
   top:14vw;
 }
 .kotik {
@@ -74,16 +74,21 @@
   100% {top:-20px;}
 }
 .infotext p {
-font-style: normal;
-font-weight: 300;
-font-size: 2.5vw;
-line-height: 3.854vw;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.7vw;
+  line-height: 2.5vw;
 }
 .infotext span {
   color: #FF7596;
 }
 .infotext {
   position: absolute;
-  top:12vw;
-  right: 5vw;
+  top:23vw;
+  right: 11.5vw;
 }
+@keyframes scale
+  from
+    transform scale(0)
+  to
+    transform scale(1)

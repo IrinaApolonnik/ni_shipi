@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'nishipi';
-    src: url('TildaSans-Light.ttf');
+    src: url('../fonts/TildaSans-Light.ttf');
     src: local('Tilda Sans Light'), local('TildaSans-Light'),
         url('TildaSans-Light.eot?#iefix') format('embedded-opentype'),
         url('TildaSans-Light.woff2') format('woff2'),

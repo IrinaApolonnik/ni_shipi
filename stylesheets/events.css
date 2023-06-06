@@ -1,0 +1,12 @@
+.bubble_time {
+  position: absolute;
+  top: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  height: 85%;
+  background-color: #FFFFFF;
+  border: 0.15vw solid #FF7596;
+  border-radius: 75px;
+  overflow: hidden;
+}
