@@ -49,9 +49,9 @@ overflow-x: hidden;
   60% {background-image: url(../images/stickers.png);opacity: 1}
   64% {background-image: url(../images/stickers.png);opacity: 1}
   68% {background-image: url(../images/stickers.png);opacity: 0}
-  72% {background-image: url(../images/tape.png);opacity: 1}
-  76% {background-image: url(../images/tape.png);opacity: 1}
-  80% {background-image: url(../images/tape.png);opacity: 0}
+  72% {background-image: url(../images/tapes.png);opacity: 1}
+  76% {background-image: url(../images/tapes.png);opacity: 1}
+  80% {background-image: url(../images/tapes.png);opacity: 0}
   84% {background-image: url(../images/apron.png);opacity: 1}
   90% {background-image: url(../images/apron.png);opacity: 1}
   96% {background-image: url(../images/apron.png);opacity: 0}
@@ -188,7 +188,7 @@ overflow-x: hidden;
   font-size: 1.7vw;
   line-height: 0.2vw;
 }
-.addtocart {
+.addto {
   position: absolute;
   display: flex;
   bottom: 3vw;
@@ -196,7 +196,7 @@ overflow-x: hidden;
   align-items: center;
   cursor: url('../images/pawhover.svg'), auto;
 }
-.addtocart p {
+.addto p {
   font-size: 1.7vw;
 }
 button {

@@ -1,12 +1,108 @@
-.bubble_time {
+.event_cards {
   position: absolute;
-  top: 2vw;
-  left: 50%;
+  top: 5vw;
+  width: auto;
+  height: 32vw;
+  background-color: #DEFFFF;
+  display: inline-flex;
+  transform: translateX(-1vw);
+}
+.bt, .meditation, .fluid_art, .gadaniya {
+  box-sizing: border-box;
+  margin: 0 1vw;
+  width: 32vw;
+  height: 32vw;
+  background-color: #ffffff;
+}
+.meditation {
+  animation: meditation 15s linear infinite;
+  background-size: contain;
+}
+@keyframes meditation {
+  0% {background-image: url(../images/med1.png);opacity: 1}
+  27% {background-image: url(../images/med1.png);opacity: 1}
+  30% {background-image: url(../images/med1.png);opacity: 0}
+  33% {background-image: url(../images/med2.png);opacity: 1}
+  60% {background-image: url(../images/med2.png);opacity: 1}
+  63% {background-image: url(../images/med2.png);opacity: 0}
+  66% {background-image: url(../images/med3.png);opacity: 1}
+  93% {background-image: url(../images/med3.png);opacity: 1}
+  96% {background-image: url(../images/med3.png);opacity: 0}
+  100% {background-image: url(../images/med1.png);opacity: 1}
+}
+.bt {
+  animation: bt 15s linear infinite;
+  background-size: contain;
+}
+@keyframes bt {
+  0% {background-image: url(../images/bt1.png);opacity: 1}
+  27% {background-image: url(../images/bt1.png);opacity: 1}
+  30% {background-image: url(../images/bt1.png);opacity: 0}
+  33% {background-image: url(../images/bt2.png);opacity: 1}
+  60% {background-image: url(../images/bt2.png);opacity: 1}
+  63% {background-image: url(../images/bt2.png);opacity: 0}
+  66% {background-image: url(../images/bt3.png);opacity: 1}
+  93% {background-image: url(../images/bt3.png);opacity: 1}
+  96% {background-image: url(../images/bt3.png);opacity: 0}
+  100% {background-image: url(../images/bt1.png);opacity: 1}
+}
+.gadaniya {
+  animation: gadaniya 15s linear infinite;
+  background-size: contain;
+}
+@keyframes gadaniya {
+  0% {background-image: url(../images/ga1.png);opacity: 1}
+  27% {background-image: url(../images/ga1.png);opacity: 1}
+  30% {background-image: url(../images/ga1.png);opacity: 0}
+  33% {background-image: url(../images/ga2.png);opacity: 1}
+  60% {background-image: url(../images/ga2.png);opacity: 1}
+  63% {background-image: url(../images/ga2.png);opacity: 0}
+  66% {background-image: url(../images/ga3.png);opacity: 1}
+  93% {background-image: url(../images/ga3.png);opacity: 1}
+  96% {background-image: url(../images/ga3.png);opacity: 0}
+  100% {background-image: url(../images/ga1.png);opacity: 1}
+}
+.fluid_art {
+  animation: fluid_art 15s linear infinite;
+  background-size: contain;
+}
+@keyframes fluid_art {
+  0% {background-image: url(../images/fa1.png);opacity: 1}
+  27% {background-image: url(../images/fa1.png);opacity: 1}
+  30% {background-image: url(../images/fa1.png);opacity: 0}
+  33% {background-image: url(../images/fa2.png);opacity: 1}
+  60% {background-image: url(../images/fa2.png);opacity: 1}
+  63% {background-image: url(../images/fa2.png);opacity: 0}
+  66% {background-image: url(../images/fa3.png);opacity: 1}
+  93% {background-image: url(../images/fa3.png);opacity: 1}
+  96% {background-image: url(../images/fa3.png);opacity: 0}
+  100% {background-image: url(../images/fa1.png);opacity: 1}
+}
+.event_text {
+  position: absolute;
+  bottom: -42%;
+  width: 34vw;
+  height: 34vw;
+  left:50%;
   transform: translateX(-50%);
-  width: 96%;
-  height: 85%;
-  background-color: #FFFFFF;
-  border: 0.15vw solid #FF7596;
-  border-radius: 75px;
-  overflow: hidden;
+}
+.event_text img {
+  width: 100%;
+  height: 100%;
+}
+.mask {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.mask img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.mask img:first-of-type {
+  top:-2vw;
+}
+.mask img:last-of-type {
+  bottom:-2vw;
 }
