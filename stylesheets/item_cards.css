@@ -1,0 +1,182 @@
+.item_back {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.balloon, .stickers, .tapes {
+  background-color: #FFFFFF;
+}
+.cups, .bottlewithcup {
+  background-color: #FFF3E8;
+}
+.bag, .apron {
+  background-color: #E9FFE3;
+}
+.stick {
+  background-color: #DEFFFF;
+}
+.item_back {
+  background-color: white;
+}
+.item_back img {
+  position: absolute;
+}
+.balloon img {
+  bottom: -20vw;
+  left: -30%;
+  height: 80vw;
+  opacity: 0.7;
+}
+.cups img {
+  bottom: -20vw;
+  left: -34%;
+  height: 70vw;
+  opacity: 0.7;
+}
+.bag img {
+  bottom: -30vw;
+  left: -10%;
+  height: 100vw;
+  opacity: 0.7;
+}
+.bottlewithcup img {
+  bottom: -10vw;
+  left: -10%;
+  height: 70vw;
+  opacity: 0.7;
+}
+.item_info {
+  position: absolute;
+  width: 47vw;
+  height: 32vw;
+
+  top:50%;
+  transform: translatey(-50%);
+  right: 7vw;
+  padding: 4vw 5vw;
+  display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item_info h2 {
+  color: #FF7596;
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+}
+.item_info p {
+  color: #FF7596;
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+  line-height: 2.5vw;
+}
+.item_info h3 {
+  color: #FF7596;
+  font-size: 1.8vw;
+  margin-top: 4vw;
+}
+.addtocart {
+  height: 5vw;
+  border-radius: 40vw;
+  background-color: #FFDCE9;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border: solid #FF7596 0.15vw;
+transition: all 0.5s ease-out;
+}
+.back_addtocart {
+  background-color: #FF7596;
+}
+
+.addtocart p:first-of-type {
+  position: relative;
+  color: #DEFFFF;
+  left: -19vw;
+  margin-top: 0.8vw;
+  transition: all 0.5s ease-out;
+}
+.addtocart p:last-of-type {
+  position: relative;
+  left: 4.5vw;
+  margin-top: 0.8vw;
+  transition: all 0.5s ease-out;
+}
+
+.change {
+  transform: translateX(32vw);
+}
+.icon {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  left: 6.5vw;
+
+transition: all 0.5s ease-out;
+}
+.butcart {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  background-color: #DEFFFF;
+  border-radius: 40vw;
+  border: solid #FF7596 0.15vw;
+  right: -1.5vw;
+  bottom: -1.5vw;
+}
+.pin {
+  display: block;
+  background-color: #FF7596;
+  height: 0.15vw;
+  border-radius: 1px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.pin:nth-child(1) {
+  display: none;
+  width: 26px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pin:nth-child(2), .pin:nth-child(3) {
+   width: 1.5vw;
+  top: 50%;
+  right: 2px;
+  transform-origin: right;
+}
+
+.pin:nth-child(2) {
+  transform: translateY(500%) translateX(-50%) rotate(90deg);
+}
+
+.pin:nth-child(3) {
+  transform: translateY(0%)  rotate(0deg);
+}
+.icon.add .pin:nth-child(1) {
+  opacity: 0;
+}
+
+.icon.add .pin:nth-child(2) {
+  width: 1vw;
+  transform-origin: center;
+  top: auto;
+  right: auto;
+  bottom: 10px;
+  background-color: #DEFFFF;
+  transform: rotate(45deg);
+}
+
+.icon.add .pin:nth-child(3) {
+  width: 1.7vw;
+  background-color: #DEFFFF;
+  transform-origin: center;
+  right: -4.5px;
+  transform: rotate(-45deg);
+}
+.icon.add div {
+  background-color: #FF7596;
+  border: solid #FF7596 0.15vw;
+}

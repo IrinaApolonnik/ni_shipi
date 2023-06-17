@@ -1,50 +1,113 @@
 $(document).ready(function(){
+  $(function(){
+ 	  let count = 1;
+      $(".next").click(function() {
+         count += 1;
+         if (count == 0) {
+           $(".meditation, .fluid_art, .gadaniya").css("animation-play-state","paused");
+           $(".darken").css("opacity","1");
+           $(".bt").css("animation-play-state","running");
+           $(".bt .darken").css("opacity","0");
+           $(".event_cards").css("transform","translateX(33vw)");
+           $(".event_text").css("transform","rotate(-1deg)");
+           $(".reg_head").html("БАБЛ-ТАЙМ");
+          }
+   			  else if (count == 1) {
+            $(".bt, .fluid_art, .gadaniya").css("animation-play-state","paused");
+            $(".darken").css("opacity","1");
+            $(".meditation").css("animation-play-state","running");
+            $(".meditation .darken").css("opacity","0");
+            $(".event_cards").css("transform","translateX(-1vw)");
+            $(".event_text").css("transform","rotate(-95deg)");
+            $(".reg_head").html("МЕДИТАЦИИ");
+   				  }
+   				else if (count == 2) {
+            $(".bt, .meditation, .gadaniya").css("animation-play-state","paused");
+            $(".darken").css("opacity","1");
+            $(".fluid_art").css("animation-play-state","running");
+            $(".fluid_art .darken").css("opacity","0");
+            $(".event_cards").css("transform","translateX(-35vw)");
+            $(".event_text").css("transform","rotate(-190deg)");
+            $(".reg_head").html("ФЛЮИД-АРТ");
+   				  }
+   				else {
+            $(".bt, .meditation, .fluid_art").css("animation-play-state","paused");
+            $(".darken").css("opacity","1");
+            $(".gadaniya").css("animation-play-state","running");
+            $(".gadaniya .darken").css("opacity","0");
+            $(".event_cards").css("transform","translateX(-69vw)");
+            $(".event_text").css("transform","rotate(-276deg)");
+            $(".reg_head").html("ГАДАНИЯ");
+   				 }
+      });
+      $(".previous").click(function() {
+         count -= 1;
+         if (count == 0) {
+           $(".meditation, .fluid_art, .gadaniya").css("animation-play-state","paused");
+           $(".darken").css("opacity","1");
+           $(".bt").css("animation-play-state","running");
+           $(".bt .darken").css("opacity","0");
+           $(".event_cards").css("transform","translateX(33vw)");
+           $(".event_text").css("transform","rotate(-1deg)");
+           $(".reg_head").html("БАБЛ-ТАЙМ");
+          }
+          else if (count == 1) {
+            $(".bt, .fluid_art, .gadaniya").css("animation-play-state","paused");
+            $(".darken").css("opacity","1");
+            $(".meditation").css("animation-play-state","running");
+            $(".meditation .darken").css("opacity","0");
+            $(".event_cards").css("transform","translateX(-1vw)");
+            $(".event_text").css("transform","rotate(-95deg)");
+            $(".reg_head").html("МЕДИТАЦИИ");
+   				  }
+          else if (count == 2) {
+            $(".bt, .meditation, .gadaniya").css("animation-play-state","paused");
+            $(".darken").css("opacity","1");
+            $(".fluid_art").css("animation-play-state","running");
+            $(".fluid_art .darken").css("opacity","0");
+            $(".event_cards").css("transform","translateX(-35vw)");
+            $(".event_text").css("transform","rotate(-190deg)");
+            $(".reg_head").html("ФЛЮИД-АРТ");
+   				  }
+          else if (count == 3) {
+            $(".bt, .meditation, .fluid_art").css("animation-play-state","paused");
+            $(".darken").css("opacity","1");
+            $(".gadaniya").css("animation-play-state","running");
+            $(".gadaniya .darken").css("opacity","0");
+            $(".event_cards").css("transform","translateX(-69vw)");
+            $(".event_text").css("transform","rotate(-276deg)");
+            $(".reg_head").html("ГАДАНИЯ");
+           }
+           else {
+             count=0
+            }
+      });
 
-  $(".cart1").click(function(){
-     $(".ic1").toggleClass("add");
-     $(".bu1").toggleClass("add");
-     $(".cart1 p").html("Добавлено в корзину");
+ 	});
+  $(".registration").click(function(){
+
+     $(".darken_reg").css("z-index","1");
+     setTimeout(function(){
+       $(".reg_form").css("opacity","1");
+			$(".darken_reg").css("opacity","0.7");
+		}, 200);
+
+
    });
- $(".cart2").click(function(){
-    $(".ic2").toggleClass("add");
-    $(".bu2").toggleClass("add");
-    $(".cart2 p").html("Добавлено в корзину");
+  $(".exit_btn").click(function(){
+    $(".reg_form").css("opacity","0");
+    $(".darken_reg").css("opacity","0");
+    setTimeout(function(){
+     $(".darken_reg").css("z-index","-3");
+   }, 300);
   });
-  $(".cart3").click(function(){
-     $(".ic3").toggleClass("add");
-     $(".bu3").toggleClass("add");
-     $(".cart3 p").html("Добавлено в корзину");
+
+  $(".reg_btn").click(function(){
+     $(".reg_btn").html("Ты записан(а)!");
    });
- $(".cart4").click(function(){
-    $(".ic4").toggleClass("add");
-    $(".bu4").toggleClass("add");
-    $(".cart4 p").html("Добавлено в корзину");
-  });
-  $(".cart5").click(function(){
-     $(".ic5").toggleClass("add");
-     $(".bu5").toggleClass("add");
-     $(".cart5 p").html("Добавлено в корзину");
-   });
- $(".cart6").click(function(){
-    $(".ic6").toggleClass("add");
-    $(".bu6").toggleClass("add");
-    $(".cart6 p").html("Добавлено в корзину");
-  });
-  $(".cart7").click(function(){
-     $(".ic7").toggleClass("add");
-     $(".bu7").toggleClass("add");
-     $(".cart7 p").html("Добавлено в корзину");
-   });
- $(".cart8").click(function(){
-    $(".ic8").toggleClass("add");
-    $(".bu8").toggleClass("add");
-    $(".cart8 p").html("Добавлено в корзину");
-  });
-  $(".cart9").click(function(){
-     $(".ic9").toggleClass("add");
-     $(".bu9").toggleClass("add");
-     $(".cart9 p").html("Добавлено в корзину");
-   });
+
+
+
   function random(low, high) {
     return Math.random() * (high - low) + low;
   }

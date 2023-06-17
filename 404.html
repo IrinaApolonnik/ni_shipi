@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+      <link rel="stylesheet" href="stylesheets/404.css" type="text/css">
+      <title>ni_shipi</title>
+      <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script type="text/javascript" src="java/404.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="shapka">
+         <a href="info.html">инфо</a>
+         <a href="shop.html">магазин</a>
+         <a href="index.html">главная</a>
+         <a href="events.html">ивенты</a>
+         <a href="open_air.html">пространство</a>
+      </div>
+    </section>
+   <section>
+     <div class="lava">
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <button type="submit" class="blob" ><p>вернуться <br> на главную </p></button>
+    </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+    </filter>
+  </defs>
+</svg>
+     <div class="text404">
+       <h2>404</h2>
+       <p>Страница не найдена, нам тоже очень грустно...</p>
+     </div>
+    <div class="cat404">
+      <img src="./images/404.svg" alt="">
+    </div>
+   </section>
+  </body>
+</html>

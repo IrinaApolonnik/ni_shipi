@@ -3,7 +3,7 @@
   top: 5vw;
   width: auto;
   height: 32vw;
-  background-color: #DEFFFF;
+transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
   display: inline-flex;
   transform: translateX(-1vw);
 }
@@ -13,10 +13,17 @@
   width: 32vw;
   height: 32vw;
   background-color: #ffffff;
+
+
 }
 .meditation {
   animation: meditation 15s linear infinite;
   background-size: contain;
+    animation-play-state: running;
+
+}
+.meditation .darken {
+  opacity: 0;
 }
 @keyframes meditation {
   0% {background-image: url(../images/med1.png);opacity: 1}
@@ -33,6 +40,7 @@
 .bt {
   animation: bt 15s linear infinite;
   background-size: contain;
+    animation-play-state: paused;
 }
 @keyframes bt {
   0% {background-image: url(../images/bt1.png);opacity: 1}
@@ -49,6 +57,7 @@
 .gadaniya {
   animation: gadaniya 15s linear infinite;
   background-size: contain;
+    animation-play-state: paused;
 }
 @keyframes gadaniya {
   0% {background-image: url(../images/ga1.png);opacity: 1}
@@ -65,6 +74,7 @@
 .fluid_art {
   animation: fluid_art 15s linear infinite;
   background-size: contain;
+    animation-play-state: paused;
 }
 @keyframes fluid_art {
   0% {background-image: url(../images/fa1.png);opacity: 1}
@@ -80,15 +90,17 @@
 }
 .event_text {
   position: absolute;
-  bottom: -42%;
+  bottom: -45%;
   width: 34vw;
   height: 34vw;
-  left:50%;
-  transform: translateX(-50%);
+  left:33%;
+  transform:rotate(-95deg) ;
+  transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
 }
 .event_text img {
   width: 100%;
   height: 100%;
+
 }
 .mask {
   width: 100vw;
@@ -101,8 +113,218 @@
   height: auto;
 }
 .mask img:first-of-type {
-  top:-2vw;
+  top:0vw;
 }
 .mask img:last-of-type {
-  bottom:-2vw;
+  bottom:-1vw;
+}
+.previous, .next {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  background-color: #DEFFFF;
+  border-radius: 40vw;
+  border: solid #FF7596 0.15vw;
+  transition: all 0.7s ease-out;
+  color: #FF7596;
+  font-size: 2vw;
+  cursor: url('../images/pawhover.svg'), auto;
+}
+.previous {
+  left:1vw;
+  top: 40%;
+}
+.next {
+  right:1vw;
+  top: 40%;
+}
+.darken {
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease-out;
+  background: #FFDCE9;
+mix-blend-mode: color;
+}
+.registration {
+  overflow: hidden;
+  position: absolute;
+  bottom: -17vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24vw;
+  height: 24vw;
+  border-radius: 40vw;
+  border: solid #FF7596 0.15vw;
+  cursor: url('../images/pawhover.svg'), auto;
+}
+
+.registration p {
+  position: absolute;
+  bottom:17.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2vw;
+  line-height: 43px;
+  color: #F05A7E;
+}
+
+.wavefill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 110%;
+  margin-left: -30vw;
+  transition: all 1s ease-out;
+}
+.wavefill img {
+  position: absolute;
+  height: 110%;
+  width: auto;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.registration:hover .wavefill {
+  margin-top: 0;
+  margin-left: 0;
+  transition: all 0.7s ease-out;
+}
+.reg_form {
+  opacity: 0;
+  position:absolute;
+  top:10vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25vw;
+  height: 30vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 3vw;
+  gap: 2vw;
+  border-radius: 2vw;
+  transition: all 0.7s ease-out;
+  z-index: 2;
+  /* border: solid #FF7596 0.15vw; */
+
+}
+
+.reg_head {
+  font-size: 3vw;
+  color: rgb(15, 15, 15);
+
+}
+
+.reg_text {
+  font-size: 1.3vw;
+  color: black;
+  text-align: center;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+#email-address {
+  height: 3vw;
+  width: 100%;
+  border: solid #FF7596 0.15vw;
+  background-color: white;
+  padding: 0 1vw;
+  outline: none;
+  border-radius: 3vw;
+  text-align: center;
+}
+
+.reg_btn {
+  width: 100%;
+  height: 3vw;
+  border: none;
+  background-color: #FF7596;
+  color: white;
+
+  border-radius: 3vw;
+  letter-spacing: 0.05vw;
+  cursor: url('../images/pawhover.svg'), auto;
+  transition: all 0.7s ease-out;
+}
+.reg_suc {
+  width: 100%;
+  height: 6vw;
+  border: none;
+  background-color: #FF7596;
+  color: white;
+  align-items: center;
+  border-radius: 1.5vw;
+  letter-spacing: 0.05vw;
+margin-top: -1vw;
+  transition: all 0.7s ease-out;
+}
+.reg_btn:hover {
+  background-color: #FFDCE9;
+  transition: all 0.7s ease-out;
+}
+
+.exit_btn {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  background-color: #FF7596;
+  border-radius: 40vw;
+  border: solid #FF7596 0.15vw;
+  width: 4vw;
+  height: 4vw;
+  border: none;
+  color: white;
+  font-size: 2vw;
+  cursor: url('../images/pawhover.svg'), auto;
+}
+
+.darken_reg{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background-color:#FFDCE9;
+  opacity: 0;
+  z-index: -3;
+  transition: all 0.7s ease-out;
+}
+
+.exit_btn1 {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  width: 4vw;
+  height: 4vw;
+}
+.exit_btn1:before , .exit_btn1:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background: #FF7596;
+  transform: translate(-50% , -100%)  scale(0);
+  animation: exit_btn1 2s infinite linear;
+}
+
+.exit_btn1:after {
+  animation-delay: 1s;
+}
+
+@keyframes exit_btn1 {
+  0% , 50% {
+    transform: translate(-50% , 0%)  scale(1)
+  }
+
+  100% {
+    transform: translate(-50%, -100%) scale(0)
+  }
 }
