@@ -1,34 +1,5 @@
 $(document).ready(function(){
-  // $(window).scroll(function(){
-  //   var scroll = $ (window).scrollTop(),
-  //       dh = $(document).height,
-  //       wh = $(window).height;
-  //       value = (scroll /(dh-wh)) * 100;
-  //   $("#locations").css("left", - value * 3 + "%");
-  // })
-  // $('html, body, *').mousewheel(function(e, delta) {
-  //     // multiplying by 40 is the sensitivity,
-  //     // increase to scroll faster.
-  //     this.scrollLeft -= (delta * 40);
-  //     e.preventDefault();
-  // });
-  // const scrollContainer = document.querySelector("main");
-  //
-  // scrollContainer.addEventListener("wheel", (evt) => {
-  //     evt.preventDefault();
-  //     scrollContainer.scrollLeft += evt.deltaY;
-  // });
 
-// const element = document.querySelector("#locations");
-//
-// element.addEventListener('wheel', (event) => {
-//   event.preventDefault();
-//
-//   element.scrollBy({
-//     left: event.deltaY < 0 ? -30 : 30,
-//
-//   });
-// });
 $(function() {
     var scroll = $('#locations');
     var h = scroll.parent().height();

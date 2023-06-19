@@ -1,5 +1,9 @@
 
 $(document).ready(function(){
+  $('.cart').click(function(){
+     window.location.href='404.html';
+  })
+
   $(".cart1").click(function(){
      $(".ic1").toggleClass("add");
      $(".bu1").toggleClass("add");
