@@ -14,9 +14,8 @@ body {
 #locations {
   top:0;
   left:0;
-
   height: 100vh;
-  width: 900%;
+  width: 900vw;
   /* position: fixed; */
   display: flex;
   overflow: hidden;
@@ -24,7 +23,7 @@ body {
 }
 .location0{
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background:url('../images/loc0.png');
   background-size: cover;
   position: relative;
@@ -32,7 +31,7 @@ body {
 }
 .location1, .location2, .location3, .location4 {
   height: 100%;
-  width: 200%;
+  width: 200vw;
 background-position: center;
   position: relative;
 }
@@ -53,25 +52,35 @@ background-position: center;
   background:url('../images/loc4.png');
   background-size: cover;
 }
-.location1 h2, .location2 h2, .location3 h2, .location4 h2 {
-  font-style: italic;
+.loc1 {
+  width: 100%;
+  height: 100%;
   position: absolute;
+}
+.loc1 h2, .loc2 h2, .loc3 h2, .loc4 h2 {
+  font-style: italic;
+  position: fixed;
   font-size: 17vw;
   color: #DEFFFF;
+  /* opacity: 0; */
+  transition: all 0.5s ease-out;
+  /* z-index: 5; */
 }
-.location1 h2{
+.loc1 h2{
   top: 6vw;
   left: 6vw;
 }
-.location2 h2{
+.loc2 h2{
   bottom: 4vw;
   left: 6vw;
 }
-.location3 h2{
+.loc3 h2{
   top: 6vw;
-  right: 106vw;
+  right: 6vw;
 }
-.location4 h2{
+.loc4 h2{
   bottom: 4vw;
-  right: 106vw;
+  right: 6vw;
 }
+
+#tooltip{position:absolute;background:red;width:20px;height:20px; z-index: 5;}

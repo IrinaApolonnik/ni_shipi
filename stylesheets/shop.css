@@ -21,7 +21,6 @@ overflow-x: hidden;
   background-position: center;
   left: 50%;
   transform: translateX(-50%);
-  /* mix-blend-mode: darken; */
   width: 70%;
   height: 40vw;
   top: 4vw;
