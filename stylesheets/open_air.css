@@ -82,5 +82,13 @@ background-position: center;
   bottom: 4vw;
   right: 6vw;
 }
+#draggable {
+  
+ top:30vw;
+ left: 40vw;
+  width: 100px;
+  height: 100px;
+  background-color: #DEFFFF;
+}
 
 #tooltip{position:absolute;background:red;width:20px;height:20px; z-index: 5;}
