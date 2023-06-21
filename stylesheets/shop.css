@@ -214,7 +214,7 @@ button {
   position: absolute;
   width: 5vw;
   height: 5vw;
-  background-color: #DEFFFF;
+  background-color: white;
   border-radius: 40vw;
   border: solid #FF7596 0.15vw;
   right: -1.5vw;
@@ -278,21 +278,7 @@ button {
   background-color: #FF7596;
   border: solid #DEFFFF 0.15vw;
 }
-.cart {
 
-  border-radius: 40vw;
-  border: solid #FF7596 0.15vw;
-  width: 2.5vw;
-  height: 2.5vw;
-  border: none;
-  background-color: unset;
-  font-size: 2vw;
-  cursor: url('../images/pawhover.svg'), auto;
-}
-.cart img {
-  width: 100%;
-  height: 100%;
-}
 #item_list a {
   position: absolute;
   width: 100%;

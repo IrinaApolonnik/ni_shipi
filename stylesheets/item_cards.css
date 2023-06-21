@@ -16,7 +16,7 @@
   background-color: #DEFFFF;
 }
 .item_back {
-  background-color: white;
+  background-color: #FFDCE9;
 }
 .item_back img {
   position: absolute;
@@ -43,6 +43,41 @@
   bottom: -10vw;
   left: -10%;
   height: 70vw;
+  opacity: 0.7;
+}
+.apron img {
+  bottom: -10vw;
+  left: -10%;
+  height: 70vw;
+  opacity: 0.7;
+}
+.stick img {
+  bottom: -19vw;
+  left: -0%;
+  height: 62vw;
+  opacity: 0.7;
+}
+.stickers img {
+  bottom: -15vw;
+  left: -22%;
+  height: 70vw;
+  opacity: 0.7;
+}
+.tapes img {
+  bottom: -15vw;
+  height: 70vw;
+  opacity: 0.7;
+}
+.stickers img {
+  bottom: -15vw;
+  left: -22%;
+  height: 70vw;
+  opacity: 0.7;
+}
+.sweatshirt img {
+  bottom: -10vw;
+  left: -32%;
+  height: 77vw;
   opacity: 0.7;
 }
 .item_info {
@@ -91,7 +126,7 @@ transition: all 0.5s ease-out;
 
 .addtocart p:first-of-type {
   position: relative;
-  color: #DEFFFF;
+  color: white;
   left: -19vw;
   margin-top: 0.8vw;
   transition: all 0.5s ease-out;
@@ -118,7 +153,7 @@ transition: all 0.5s ease-out;
   position: absolute;
   width: 5vw;
   height: 5vw;
-  background-color: #DEFFFF;
+  background-color: white;
   border-radius: 40vw;
   border: solid #FF7596 0.15vw;
   right: -1.5vw;
@@ -165,13 +200,13 @@ transition: all 0.5s ease-out;
   top: auto;
   right: auto;
   bottom: 10px;
-  background-color: #DEFFFF;
+  background-color: white;
   transform: rotate(45deg);
 }
 
 .icon.add .pin:nth-child(3) {
   width: 1.7vw;
-  background-color: #DEFFFF;
+  background-color: white;
   transform-origin: center;
   right: -4.5px;
   transform: rotate(-45deg);

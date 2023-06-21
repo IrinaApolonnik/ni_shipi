@@ -7,17 +7,18 @@
       <link rel="stylesheet" href="stylesheets/open_air.css" type="text/css">
       <title>ni_shipi/open_air</title>
       <link rel="icon" type="image/x-icon" href="images/icon.ico" />
-
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-
-
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
       <script type="text/javascript" src="java/open_air.js"></script>
 
 
   </head>
   <body>
-
+<section class="portrait">
+  <div class="spinner">
+<div></div>
+</div>
+</section>
     <section class="shapka">
       <a href="open_air.html">пространство</a>
       <div class="">
@@ -41,28 +42,57 @@
       </div>
       <div class="location1">
         <div class="loc1">
+
+          <div class="loc_text draggable" >
+            <p>Сам воздух, помогает всем <br>привести мысли в порядок <br>и прийти в себя, успокоиться</p>
+          </div>
+          <div class="loc_text draggable" >
+            <p>Самое людная локация из всех, <br> отлично подойдет как для больших <br> компаний, так и для одиночек</p>
+          </div>
           <div id="draggable" class="ui-widget-content">
 
           </div>
-          <h2>1</h2>
+          <h2>1<span>зона бара</span> </h2>
         </div>
       </div>
       <div class="location2">
         <div class="loc2">
-          <h2>2</h2>
+          <div class="loc_text draggable" >
+            <p>До лужайки пузырьков можно дойти, если идти по ручью, соединяющему все локации </p>
+          </div>
+          <div class="loc_text draggable" >
+            <p>Пузыри изготовлены из пластичной материи, через которую может пройти человек и котята</p>
+          </div>
+          <h2>2<span>лужайка пузырей</span> </h2>
         </div>
       </div>
       <div class="location3">
         <div class="loc3">
-          <h2>3</h2>
+          <div class="loc_text draggable" >
+            <p>Маленький оазис посреди дюн, идеально для ищущих для себя места странников</p>
+          </div>
+          <div class="loc_text draggable" >
+            <p>В беседке каждый сможет согреться, ведь нам всем так не хватает лучей тепла и добра</p>
+          </div>
+          <h2><span>беседка в пустыне</span>3</h2>
         </div>
       </div>
       <div class="location4">
         <div class="loc4">
-          <h2>4</h2>
+          <div class="loc_text draggable" >
+            <p>C силой воды, гостей наполнит энергия жизни, состояние потока, о котором так много говорят</p>
+          </div>
+          <div class="loc_text draggable" >
+            <p>Островокидеально подойдет для ужина с вашей второй половинкой и станет отличным сюрпризом</p>
+          </div>
+          <h2>4<span>Островок</span> </h2>
         </div>
-      </div>
 
+      </div>
+      <div id="walking_cat">
+
+      </div>
     </section>
+
   </body>
 </html>

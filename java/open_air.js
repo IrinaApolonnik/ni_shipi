@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $( function() {
-      $( "#draggable" ).draggable();
+      $( ".draggable" ).draggable();
     } );
 // появление текста на секциях
 
@@ -8,25 +8,126 @@ $(document).ready(function(){
     didScroll = true;
   });
 
-  $('.loc1').fadeOut();
-  $('.loc2').fadeOut();
-  $('.loc3').fadeOut();
-  $('.loc4').fadeOut();
+  $('.loc1 h2').fadeOut(20);
+  $('.loc1 div:nth-of-type(2)').fadeOut(20);
+  $('.loc1 div:nth-of-type(1)').fadeOut(20);
+  $('.loc2 h2').fadeOut(20);
+  $('.loc2 div:nth-of-type(2)').fadeOut(20);
+  $('.loc2 div:nth-of-type(1)').fadeOut(20);
+  $('.loc3 h2').fadeOut(20);
+  $('.loc3 div:nth-of-type(2)').fadeOut(20);
+  $('.loc3 div:nth-of-type(1)').fadeOut(20);
+  $('.loc4 h2').fadeOut(20);
+  $('.loc4 div:nth-of-type(2)').fadeOut(20);
+  $('.loc4 div:nth-of-type(1)').fadeOut(20);
   $("body").scroll(function () {
     if ($(this).scrollLeft() > 1300)  {
-      $('.loc1').fadeIn();
+      $('.loc1 h2').fadeIn();
+
     }
     else {
-      $('.loc1').fadeOut();
+      $('.loc1 h2').fadeOut();
+
     }
-    });
-      $("body").scroll(function () {
-      if ($(this).scrollLeft() > 4400) {
-      $('.loc2').fadeIn();
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 2000)  {
+      $('.loc1 div:nth-of-type(2)').fadeIn();
     }
     else {
-      $('.loc2').fadeOut();
+      $('.loc1 div:nth-of-type(2)').fadeOut();
     }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 2600)  {
+
+      $('.loc1 div:nth-of-type(1)').fadeIn();
+    }
+    else {
+
+      $('.loc1 div:nth-of-type(1)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 4200)  {
+      $('.loc2 h2').fadeIn();
+      $(".loc1 div").css("z-index","0");
+    }
+    else {
+      $('.loc2 h2').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 4900)  {
+      $('.loc2 div:nth-of-type(2)').fadeIn();
+    }
+    else {
+      $('.loc2 div:nth-of-type(2)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 5500)  {
+      $('.loc2 div:nth-of-type(1)').fadeIn();
+    }
+    else {
+      $('.loc2 div:nth-of-type(1)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 7000)  {
+      $('.loc3 h2').fadeIn();
+      $(".loc2 div").css("z-index","0");
+    }
+    else {
+      $('.loc3 h2').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 7700)  {
+      $('.loc3 div:nth-of-type(2)').fadeIn();
+    }
+    else {
+      $('.loc3 div:nth-of-type(2)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 8300)  {
+      $('.loc3 div:nth-of-type(1)').fadeIn();
+    }
+    else {
+      $('.loc3 div:nth-of-type(1)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 10000)  {
+      $('.loc4 h2').fadeIn();
+      $(".loc3 div").css("z-index","0");
+    }
+    else {
+      $('.loc4 h2').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 10300)  {
+      $('.loc4 div:nth-of-type(2)').fadeIn();
+    }
+    else {
+      $('.loc4 div:nth-of-type(2)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+    if ($(this).scrollLeft() > 10900)  {
+      $('.loc4 div:nth-of-type(1)').fadeIn();
+    }
+    else {
+      $('.loc4 div:nth-of-type(1)').fadeOut();
+    }
+  });
+  $("body").scroll(function () {
+      $("#walking_cat").css("background-image","url('./images/catgo.svg')");
+      setTimeout(function(){
+       $("#walking_cat").css("background-image","url('./images/catstop.svg')");
+     }, 600);
   });
 
 // горизонтальный скролл

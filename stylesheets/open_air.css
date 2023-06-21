@@ -19,6 +19,7 @@ body {
   /* position: fixed; */
   display: flex;
   overflow: hidden;
+  z-index: 4;
 
 }
 .location0{
@@ -39,18 +40,23 @@ background-position: center;
   background:url('../images/loc1.png');
   background-size: cover;
 
+
+
 }
 .location2 {
   background:url('../images/loc2.png');
   background-size: cover;
+
 }
 .location3 {
   background:url('../images/loc3.png');
   background-size: cover;
+
 }
 .location4 {
   background:url('../images/loc4.png');
   background-size: cover;
+
 }
 .loc1 {
   width: 100%;
@@ -66,6 +72,7 @@ background-position: center;
   transition: all 0.5s ease-out;
   /* z-index: 5; */
 }
+
 .loc1 h2{
   top: 6vw;
   left: 6vw;
@@ -74,21 +81,78 @@ background-position: center;
   bottom: 4vw;
   left: 6vw;
 }
-.loc3 h2{
+.loc4 h2{
   top: 6vw;
   right: 6vw;
 }
-.loc4 h2{
+.loc3 h2{
   bottom: 4vw;
   right: 6vw;
 }
-#draggable {
-  
- top:30vw;
- left: 40vw;
-  width: 100px;
-  height: 100px;
-  background-color: #DEFFFF;
+h2 span {
+
+  font-size: 7vw;
+}
+.draggable {
+  z-index: 6;
+
+}
+.loc_text {
+  position: fixed;
+  width: 32vw;
+  height: 12vw;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3vw;
+  padding: 3vw;
+}
+.loc1 .loc_text:nth-of-type(2) {
+  top: 21vw;
+  left: 6vw;
+}
+.loc1 .loc_text:nth-of-type(1) {
+  top: 27vw;
+  left: 24vw;
+}
+.loc2 .loc_text:nth-of-type(2) {
+  bottom: 21vw;
+  left: 6vw;
+}
+.loc2 .loc_text:nth-of-type(1) {
+  bottom: 27vw;
+  left: 24vw;
+}
+.loc3 .loc_text:nth-of-type(2) {
+  bottom: 21vw;
+  right: 6vw;
+}
+.loc3 .loc_text:nth-of-type(1) {
+  bottom: 27vw;
+  right: 24vw;
+}
+.loc4 .loc_text:nth-of-type(2) {
+  top: 21vw;
+  right: 6vw;
+}
+.loc4 .loc_text:nth-of-type(1) {
+  top: 27vw;
+  right: 24vw;
+}
+.loc_text p {
+  font-size: 1.7vw;
+  color: #F05A7E;
+}
+#walking_cat {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  width: 24vw;
+  height: 16vw;
+  background:url('../images/catstop.svg');
+  background-size: cover;
+  animation: catgo .75s steps(1) infinite;
 }
 
-#tooltip{position:absolute;background:red;width:20px;height:20px; z-index: 5;}
+@keyframes catgo {
+  0% {background-position: 0;}
+  50% {background-position: -24vw;}
+}
