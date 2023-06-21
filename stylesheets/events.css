@@ -128,7 +128,11 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
   transition: all 0.7s ease-out;
   color: #FF7596;
   font-size: 2vw;
-  cursor: url('../images/pawhover.svg'), auto;
+  cursor: url('../images/pawactive.svg'), auto;
+}
+.previous img, .next img {
+  width: 40%;
+  height: 40%;
 }
 .previous {
   left:1vw;
@@ -137,6 +141,7 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
 .next {
   right:1vw;
   top: 40%;
+  transform: rotate(180deg);
 }
 .darken {
   width: 100%;
@@ -155,7 +160,7 @@ mix-blend-mode: color;
   height: 24vw;
   border-radius: 40vw;
   border: solid #FF7596 0.15vw;
-  cursor: url('../images/pawhover.svg'), auto;
+  cursor: url('../images/pawactive.svg'), auto;
 }
 
 .registration p {
@@ -250,7 +255,7 @@ mix-blend-mode: color;
 
   border-radius: 3vw;
   letter-spacing: 0.05vw;
-  cursor: url('../images/pawhover.svg'), auto;
+  cursor: url('../images/pawactive.svg'), auto;
   transition: all 0.7s ease-out;
 }
 .reg_suc {
@@ -282,7 +287,7 @@ margin-top: -1vw;
   border: none;
   color: white;
   font-size: 2vw;
-  cursor: url('../images/pawhover.svg'), auto;
+  cursor: url('../images/pawactive.svg'), auto;
 }
 
 .darken_reg{
