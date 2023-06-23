@@ -10,6 +10,13 @@
       <script type="text/javascript" src="java/events.js"></script>
   </head>
   <body>
+    <section class="portrait">
+      <div class="spinner">
+    <div><img src="./images/turn.svg" alt=""> </div>
+    </div>
+    <p>переверните устройство</p>
+    </section>
+    <!-- шапка с меню -->
     <section class="shapka">
       <a href="events.html">ивенты</a>
       <div class="">
@@ -17,7 +24,7 @@
         <label for="menu-icon"></label>
         <nav class="nav">
           <ul class="pt-5">
-            <li><a href="main.html">главная</a></li>
+            <li><a href="index.html">главная</a></li>
             <li><a href="info.html">инфо</a></li>
             <li><a href="shop.html">магазин</a></li>
             <li><a href="open_air.html">пространство</a></li>
@@ -25,17 +32,23 @@
         </nav>
       </div>
     </section>
+    <!-- выбор ивента -->
     <section>
+      <!-- карточки ивентов -->
       <div class="event_cards">
+        <!-- бабл-тайм -->
         <div class="bt">
           <div class="darken"></div>
         </div>
+        <!-- медитации -->
         <div class="meditation">
           <div class="darken"></div>
         </div>
+        <!-- флюид-арт -->
         <div class="fluid_art">
           <div class="darken"></div>
         </div>
+        <!-- гадания -->
         <div class="gadaniya">
           <div class="darken"></div>
         </div>
@@ -44,39 +57,38 @@
         <img src="images/mask1.svg" alt="">
         <img src="images/mask2.svg" alt="">
       </div>
+      <!-- крутящийся текст ивентов -->
       <div class="event_text">
         <img src="images/events_text.svg" alt="">
       </div>
+      <!-- кнопки -->
       <div class="evbuttons">
+        <!-- кнопки назад и вперед -->
         <button type="button" class="previous"><img src="./images/arrow.svg" alt=""> </button>
         <button type="button" class="next"><img src="./images/arrow.svg" alt=""></button>
+        <!-- кнопка регистрации с заполнением жидкостью -->
         <div class="registration">
           <div class="wavefill ">
             <img  src="images/wavefille.svg" alt="">
           </div>
           <p>Зарегестрироваться</p>
         </div>
-        <div class="darken_reg">
-
-        </div>
+        <div class="darken_reg"></div>
+        <!-- форма регистрации -->
         <form class="reg_form">
           <span class="reg_head">МЕДИТАЦИИ</span>
           <p class="reg_text">Это именно то, что тебе нужно! Твой билет придёт на почту.</p>
+          <!-- имейл и кнопка регистрации -->
           <div class="inputContainer">
             <input placeholder="email" type="email" name="email" id="email-address">
             <button type="button" class="reg_btn">Записаться!</button>
           </div>
-          <div class="exit_btn1">
-
-          </div>
-          <button type="button" class="exit_btn"> <p>×</p> </button>
-
-
+          <!-- анимация для кнопки выхода -->
+          <div class="exit_btn1"></div>
+          <!-- сама кнопка выхода -->
+          <button type="button" class="exit_btn"> <p>×</p></button>
         </form>
       </div>
-
-
-
     </section>
   </body>
 </html>

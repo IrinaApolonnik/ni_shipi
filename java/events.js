@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // перемотка событий
   $(function(){
  	  let count = 1;
       $(".next").click(function() {
@@ -82,17 +83,14 @@ $(document).ready(function(){
              count=0
             }
       });
-
  	});
+  // кнопка регистрации
   $(".registration").click(function(){
-
      $(".darken_reg").css("z-index","1");
      setTimeout(function(){
        $(".reg_form").css("opacity","1");
 			$(".darken_reg").css("opacity","0.7");
 		}, 200);
-
-
    });
   $(".exit_btn").click(function(){
     $(".reg_form").css("opacity","0");
@@ -101,7 +99,6 @@ $(document).ready(function(){
      $(".darken_reg").css("z-index","-3");
    }, 300);
   });
-
   $(".reg_btn").click(function(){
      $(".reg_btn").html("Ты записан(а)!");
      $(".reg_btn").css("background-color","#FFDCE9");
@@ -114,5 +111,4 @@ $(document).ready(function(){
     $(".reg_btn").html("Записаться!");
     $(".reg_btn").css("background-color","#FF7596");
   });
-
 });

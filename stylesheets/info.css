@@ -1,3 +1,4 @@
+/* лого в кружочке */
 .circlelogo {
   transition: all 0.5s ease-out;
   width: 34.063vw;
@@ -35,6 +36,7 @@
   background-image: url(../images/logob.svg);
   transition: all 0.5s ease-out;
 }
+/* левитирующий котик */
 .cat {
   position: absolute;
   width: 31.615vw;
@@ -73,6 +75,7 @@
   50% {top:20px;}
   100% {top:-20px;}
 }
+/* текст */
 .infotext p {
   font-style: normal;
   font-weight: 300;
@@ -87,8 +90,3 @@
   top:23vw;
   right: 11.5vw;
 }
-@keyframes scale
-  from
-    transform scale(0)
-  to
-    transform scale(1)

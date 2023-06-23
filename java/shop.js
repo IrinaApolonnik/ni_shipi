@@ -1,9 +1,10 @@
 
 $(document).ready(function(){
+  // кнопка корзины с ошибкой 404
   $('.cart').click(function(){
      window.location.href='404.html';
   })
-
+  // кнопки добавить в корзину
   $(".cart1").click(function(){
      $(".ic1").toggleClass("add");
      $(".bu1").toggleClass("add");

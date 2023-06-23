@@ -11,6 +11,13 @@
       <script type="text/javascript" src="java/404.js"></script>
   </head>
   <body>
+    <section class="portrait">
+      <div class="spinner">
+    <div><img src="./images/turn.svg" alt=""> </div>
+    </div>
+    <p>переверните устройство</p>
+    </section>
+    <!-- шапка с меню -->
     <section>
       <div class="shapka">
          <a href="info.html">инфо</a>
@@ -21,26 +28,28 @@
       </div>
     </section>
    <section>
-     <div class="lava">
+     <!-- залипательная жидкость -->
+    <div class="lava">
       <div class="blob"></div>
       <div class="blob"></div>
       <div class="blob"></div>
       <button type="submit" class="blob" ><p>вернуться <br> на главную </p></button>
     </div>
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
-      <feBlend in="SourceGraphic" in2="goo"></feBlend>
-    </filter>
-  </defs>
-</svg>
-     <div class="text404">
-       <h2>404</h2>
-       <p>Страница не найдена, нам тоже очень грустно...</p>
-     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+    <!-- текст об ошибке -->
+    <div class="text404">
+      <h2>404</h2>
+      <p>Страница не найдена, нам тоже очень грустно...</p>
+    </div>
+    <!-- грустный кис -->
     <div class="cat404">
       <img src="./images/404.svg" alt="">
     </div>

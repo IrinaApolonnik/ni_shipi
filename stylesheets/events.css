@@ -1,9 +1,10 @@
+/* карточки ивентов */
 .event_cards {
   position: absolute;
   top: 5vw;
   width: auto;
   height: 32vw;
-transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
+  transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
   display: inline-flex;
   transform: translateX(-1vw);
 }
@@ -13,14 +14,12 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
   width: 32vw;
   height: 32vw;
   background-color: #ffffff;
-
-
 }
+/* анимации карточек */
 .meditation {
   animation: meditation 15s linear infinite;
   background-size: contain;
-    animation-play-state: running;
-
+  animation-play-state: running;
 }
 .meditation .darken {
   opacity: 0;
@@ -88,9 +87,10 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
   96% {background-image: url(../images/fa3.png);opacity: 0}
   100% {background-image: url(../images/fa1.png);opacity: 1}
 }
+/* крутящийся текст */
 .event_text {
   position: absolute;
-  bottom: -45%;
+  bottom: -22vw;
   width: 34vw;
   height: 34vw;
   left:33%;
@@ -100,8 +100,8 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
 .event_text img {
   width: 100%;
   height: 100%;
-
 }
+/* маски, создающие выпуклый эффект */
 .mask {
   width: 100vw;
   height: 100vh;
@@ -118,6 +118,7 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
 .mask img:last-of-type {
   bottom:-1vw;
 }
+/* кнопки вперед, назад */
 .previous, .next {
   position: absolute;
   width: 5vw;
@@ -143,13 +144,15 @@ transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
   top: 40%;
   transform: rotate(180deg);
 }
+/* цветовой фильтр, накладывающийся на неактивные карточки */
 .darken {
   width: 100%;
   height: 100%;
   transition: all 0.7s ease-out;
   background: #FFDCE9;
-mix-blend-mode: color;
+  mix-blend-mode: color;
 }
+/* кнопка открытия формы регистрации */
 .registration {
   overflow: hidden;
   position: absolute;
@@ -162,7 +165,6 @@ mix-blend-mode: color;
   border: solid #FF7596 0.15vw;
   cursor: url('../images/pawactive.svg'), auto;
 }
-
 .registration p {
   position: absolute;
   bottom:17.5vw;
@@ -172,7 +174,7 @@ mix-blend-mode: color;
   line-height: 43px;
   color: #F05A7E;
 }
-
+/* заполняющая кнопку жидкость */
 .wavefill {
   position: absolute;
   width: 100%;
@@ -194,6 +196,7 @@ mix-blend-mode: color;
   margin-left: 0;
   transition: all 0.7s ease-out;
 }
+/* форма регистрации */
 .reg_form {
   opacity: 0;
   position:absolute;
@@ -212,29 +215,25 @@ mix-blend-mode: color;
   border-radius: 2vw;
   transition: all 0.7s ease-out;
   z-index: 2;
-  /* border: solid #FF7596 0.15vw; */
-
 }
-
+/* заголовок формы */
 .reg_head {
   font-size: 3vw;
   color: rgb(15, 15, 15);
-
 }
-
+/* сопровождающий текст */
 .reg_text {
   font-size: 1.3vw;
   color: black;
   text-align: center;
 }
-
 .inputContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1vw;
 }
-
+/* имейл */
 #email-address {
   height: 3vw;
   width: 100%;
@@ -245,36 +244,23 @@ mix-blend-mode: color;
   border-radius: 3vw;
   text-align: center;
 }
-
+/* кнопка регистрации */
 .reg_btn {
   width: 100%;
   height: 3vw;
   border: none;
   background-color: #FF7596;
   color: white;
-
   border-radius: 3vw;
   letter-spacing: 0.05vw;
   cursor: url('../images/pawactive.svg'), auto;
-  transition: all 0.7s ease-out;
-}
-.reg_suc {
-  width: 100%;
-  height: 6vw;
-  border: none;
-  background-color: #FF7596;
-  color: white;
-  align-items: center;
-  border-radius: 1.5vw;
-  letter-spacing: 0.05vw;
-margin-top: -1vw;
   transition: all 0.7s ease-out;
 }
 .reg_btn:hover {
   background-color: #FFDCE9;
   transition: all 0.7s ease-out;
 }
-
+/* кнопка закрыть */
 .exit_btn {
   position: absolute;
   top: 0.5vw;
@@ -289,7 +275,7 @@ margin-top: -1vw;
   font-size: 2vw;
   cursor: url('../images/pawactive.svg'), auto;
 }
-
+/* блок, затемняющий все, кроме формы */
 .darken_reg{
   position: absolute;
   width: 100%;
@@ -299,7 +285,7 @@ margin-top: -1vw;
   z-index: -3;
   transition: all 0.7s ease-out;
 }
-
+/* анимация кнопки закрыть */
 .exit_btn1 {
   position: absolute;
   top: 0.5vw;
@@ -319,17 +305,10 @@ margin-top: -1vw;
   transform: translate(-50% , -100%)  scale(0);
   animation: exit_btn1 2s infinite linear;
 }
-
 .exit_btn1:after {
   animation-delay: 1s;
 }
-
 @keyframes exit_btn1 {
-  0% , 50% {
-    transform: translate(-50% , 0%)  scale(1)
-  }
-
-  100% {
-    transform: translate(-50%, -100%) scale(0)
-  }
+  0% , 50% {transform: translate(-50% , 0%)  scale(1)}
+  100% {transform: translate(-50%, -100%) scale(0)}
 }

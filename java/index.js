@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+  // анимированный фон
   function random(low, high) {
     return Math.random() * (high - low) + low;
   }
@@ -12,11 +12,9 @@ $(document).ready(function(){
       this.particleLength = 150;
       this.particles = [];
       this.particleMaxRadius = 8;
-
       this.handleMouseMoveBind = this.handleMouseMove.bind(this);
       this.handleClickBind = this.handleClick.bind(this);
       this.handleResizeBind = this.handleResize.bind(this);
-
       this.initialize();
       this.render();
     }
@@ -196,16 +194,4 @@ $(document).ready(function(){
   document.querySelector('.grid').addEventListener('click', () => {
       clearInterval(autoShow);
   });
-
-
-
-
-  // $( ".circlelogo" ).hover(function(){
-  //   $(".logo").css("background-image","url(../images/logob.svg)");
-  //   $(this).css("background","(#FF7596");
-  //    }, function(){
-  //      $(".logo").css("background-image","url(../images/logop.svg)");
-  //      $(this).css("background","(#DEFFFF)";
-  //  });
-
 });

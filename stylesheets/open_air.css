@@ -1,8 +1,6 @@
 html {
   height: 100vh;
   width: 100vw;
-  /* overflow: auto; */
-
 }
 body {
   height: 100vh;
@@ -11,16 +9,15 @@ body {
   padding: 0;
   overflow: hidden;
 }
+/* локации */
 #locations {
   top:0;
   left:0;
   height: 100vh;
   width: 900vw;
-  /* position: fixed; */
   display: flex;
   overflow: hidden;
   z-index: 4;
-
 }
 .location0{
   height: 100%;
@@ -33,46 +30,41 @@ body {
 .location1, .location2, .location3, .location4 {
   height: 100%;
   width: 200vw;
-background-position: center;
+  background-position: center;
   position: relative;
 }
 .location1 {
   background:url('../images/loc1.png');
   background-size: cover;
-
-
-
 }
 .location2 {
   background:url('../images/loc2.png');
   background-size: cover;
-
 }
 .location3 {
   background:url('../images/loc3.png');
   background-size: cover;
-
 }
 .location4 {
   background:url('../images/loc4.png');
   background-size: cover;
-
 }
 .loc1 {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.loc1 h2, .loc2 h2, .loc3 h2, .loc4 h2 {
+.loc1 h2, .loc2 h2, .loc3 h2, .loc4 h2, .location0 h2  {
   font-style: italic;
   position: fixed;
   font-size: 17vw;
   color: #DEFFFF;
-  /* opacity: 0; */
   transition: all 0.5s ease-out;
-  /* z-index: 5; */
 }
-
+.location0 h2 {
+  bottom: 6vw;
+  right: 28vw;
+}
 .loc1 h2{
   top: 6vw;
   left: 6vw;
@@ -89,13 +81,11 @@ background-position: center;
   bottom: 4vw;
   right: 6vw;
 }
-h2 span {
-
+h2 span, .location0 h2 {
   font-size: 7vw;
 }
 .draggable {
   z-index: 6;
-
 }
 .loc_text {
   position: fixed;
@@ -141,6 +131,7 @@ h2 span {
   font-size: 1.7vw;
   color: #F05A7E;
 }
+/* гуляющий котик */
 #walking_cat {
   position: fixed;
   top: 35%;
@@ -151,7 +142,6 @@ h2 span {
   background-size: cover;
   animation: catgo .75s steps(1) infinite;
 }
-
 @keyframes catgo {
   0% {background-position: 0;}
   50% {background-position: -24vw;}
